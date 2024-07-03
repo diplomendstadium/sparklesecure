@@ -1,4 +1,4 @@
-# sparklesecure
+# SparkleSecure
 Schlichte Textverschlüsselung im Linux-Terminal
 
 # Was?
