@@ -1,3 +1,12 @@
+```
+  ,=\.-----""""^==-- '
+ ;;`( ,___, ,/~\;    '
+ `  )/>/   \|-,      '
+    | `\    | "      '
+    "   "   "        '
+  SparkleSecure v1.2 '
+```
+
 # SparkleSecure
 Einfache Textverschlüsselung auf dem Linux-Terminal
 
