@@ -9,7 +9,7 @@ echo ' ;;`( ,___, ,/~\;    '
 echo ' `  )/>/   \|-,      '
 echo '    | `\    | "      '
 echo '    "   "   "        '
-echo '  SparkleSecure v1.1 '
+echo '  SparkleSecure v1.2 '
 echo
 
 
@@ -23,13 +23,12 @@ read eingabe
 echo
 
 # $userpw: Abfrage des Passworts
-echo 'Bitte das Passwort eingeben, das verwendet werden soll:'
-read -s userpw
+read -s -p 'Passwort:' userpw
 echo
 
 # $modus: Verschlüsselung oder Entschlüsselung festlegen
-echo 'Bitte e für Verschlüsselung oder d für Entschlüsselung eingeben:'
-read modus
+echo
+read -p 'e für Verschlüsselung, d für Entschlüsselung: ' modus
 echo
 
 # Falls verschlüsselt wird, Abfrage von Absender und Empfänger
@@ -71,7 +70,12 @@ else
 fi
 
 # Hier passiert jetzt die eigentliche Ver- bzw. Entschlüsselung
-output=$(echo $eingabe | openssl enc -$modus -aes-256-cbc -salt -a -md sha512 -pbkdf2 -k $hashpw)
+if [ "$modus" = "e" ]; then
+    output=$(echo $eingabe | openssl enc -aes-256-cbc -salt -a -md sha512 -pbkdf2 -iter 4321 -k $hashpw)
+else
+    output=$(echo $eingabe | openssl enc -d -aes-256-cbc -salt -a -md sha512 -pbkdf2 -iter 4321 -k $hashpw)
+fi
+
 
 # Ausgabe des Ergebnisses
 echo
