@@ -10,13 +10,13 @@
 # SparkleSecure
 Einfache Textverschlüsselung auf dem Linux-Terminal
 
-Heutzutage stehen uns viele vermeintlich sichere und benutzerfreundliche Verschlüsselungslösungen zur Verfügung. Von Cryptomator für Daten bis hin zu Signal für die Kommunikation. Auf den zweiten Blick haben viele dieser Lösungen jedoch einen faden Beigeschmack. Sie sind so komplex, dass ehrlich gesagt die meisten von uns nicht in der Lage sind, den Quellcode auch nur annähernd zu verstehen. Das ist unbefriedigend. Auch sind viele weit verbreiteten Lösungen wie z.B. Threema so groß, dass sie immer als Organisation mit festen Mitarbeiter:innen durch nationales (Überwachungs-)Recht in ihren Heimatländern greifbar sind.
+Heutzutage gibt es viele angeblich sichere und benutzerfreundliche Verschlüsselungslösungen. Von Cryptomator für Daten bis zu Signal für die Kommunikation. Bei näherer Betrachtung haben viele dieser Lösungen jedoch einen bitteren Beigeschmack. Sie sind so komplex, dass die meisten von uns ehrlich gesagt nicht in der Lage sind, den Quellcode auch nur annähernd zu verstehen. Das ist unbefriedigend. Auch sind viele weit verbreitete Lösungen wie z.B. Threema so groß, dass sie immer als Organisation mit festen Mitarbeiter:innen durch nationales (Überwachungs-)Recht in ihren Heimatländern greifbar sind.
 
-Für die wenigen Dinge im Alltag, bei denen es wirklich auf Vertraulichkeit ankommt, habe ich daher SparkleSecure geschrieben. Das Programm ist ein so einfaches Skript, dass wirklich jeder mit grundlegenden Bash-Kenntnissen verstehen kann, was hier passiert. Außerdem verwendet das Skript nur grundlegende Befehle, die auf jedem Linux vorhanden sein sollten, und benötigt daher keine Installation. Aufgrund seiner Struktur eignet sich das Programm vor allem für kurze Textnachrichten - durch kleine Änderungen am Quelltext lassen sich aber auch z.B. Dateien verschlüsseln.
+Für die wenigen Dinge im Alltag, bei denen es wirklich auf Vertraulichkeit ankommt, habe ich daher SparkleSecure geschrieben. Das Programm ist ein so einfaches Skript, dass wirklich jeder mit grundlegenden Bash-Kenntnissen verstehen kann, was hier passiert. Außerdem verwendet das Skript nur grundlegende Befehle, die auf jedem Linux vorhanden sein sollten, und benötigt daher keine Installation. Aufgrund seiner Struktur eignet sich das Programm vor allem für kurze Textnachrichten - durch kleine Änderungen im Quelltext können aber auch z.B. Dateien verschlüsselt werden.
 
 Einfach die Datei [SecureSparkle.sh](https://github.com/diplomendstadium/sparklesecure/blob/main/SparkleSecure.sh) herunterladen, den Ordner im Terminal öffnen und mit `bash SparkleSecure.sh` loslegen.
 
-Die verschlüsselte Nachricht kann dann auf beliebige Weise versendet werden - der Inhalt ist ja gut geschützt :-)
+Die verschlüsselte Nachricht kann dann beliebig verschickt werden - der Inhalt ist ja gut geschützt :-)
 
 # SparkleSecure
 Simple text encryption on the Linux terminal
